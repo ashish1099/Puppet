@@ -1,0 +1,24 @@
+# Added by Puppet Interfaces Modules #
+###################################
+
+DEVICE=<%=@name%>
+HWADDR=<%=@mac_address%>
+<% if @ipaddr -%>
+IPADDR=<%=@ipaddr%>
+<% end -%>
+<% if @netmask -%>
+NETMASK=<%=@netmask%>
+<% end -%>
+NM_CONTROLLED=no
+ONBOOT=yes
+<% if @master -%>
+MASTER=<%=@master%>
+SLAVE=yes
+<% end -%>
+<% if @bridge -%>
+BRIDGE=<%=bridge%>
+<% end -%>
+USERCTL=no
+TYPE=Ethernet
+BOOTPROTO=<%=@bootproto%>
+IPV6INIT=no

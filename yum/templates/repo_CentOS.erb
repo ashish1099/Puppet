@@ -1,0 +1,15 @@
+# Generate by puppet
+[<%=@name-%>]
+name=<%=@reponame%>
+baseurl=<%=@baseurl%>
+<% if @mirrorlist -%>
+mirrorlist=<%=@mirrorlist%>
+<% end -%>
+<% if @failovermethod -%>
+failovermethod=<%=@failovermethod%>
+<% end -%>
+enabled=1
+<% if @gpgkey -%>
+gpgkey=<%=@gpgkey%>
+<% end -%>
+gpgcheck=<%=@gpgcheck%>

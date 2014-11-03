@@ -1,0 +1,15 @@
+# Added by Puppet Bonding Modules #
+###################################
+
+DEVICE=<%=@name%>
+BOOTPROTO=none
+ONBOOT=yes
+NETWORK=<%=@bond_network%>
+NETMASK=<%=@bond_netmask%>
+IPADDR=<%=@bond_ipaddr%>
+USERCTL=no
+TYPE=Ethernet
+IPV6INIT=no
+BONDING_OPTS="<%=@bond_options%>"
+NM_CONTROLLED=no
+GATEWAY=196.1.1.8

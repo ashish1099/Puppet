@@ -1,0 +1,10 @@
+## Generate by puppet ##
+[<%=@name%>]
+name=<%=@reponame%>
+enabled=1
+autorefresh=1
+baseurl=<%=@baseurl%>
+<% if @type -%>
+type=<%=@type%>
+<% end -%>
+keeppackages=0
