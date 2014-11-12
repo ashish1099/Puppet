@@ -19,6 +19,6 @@ To setup a Master Node
 `node ganeti01 { class { 'ganeti' : host_address => $fqdn, ip_address => "196.168.1.10", pv_name => ["/dev/sdb1"], master => true } }`
 
 To setup a Secondary Node
-```node ganeti02 { class { 'ganeti' : host_address => $fqdn, ip_address => "196.168.1.20", pv_name => ["/dev/sdb1"], master => false } }```
+`node ganeti02 { class { 'ganeti' : host_address => $fqdn, ip_address => "196.168.1.20", pv_name => ["/dev/sdb1"], master => false } }`
 
 
