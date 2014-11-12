@@ -12,8 +12,11 @@ You have to add cluster_hostname and cluster_ipaddr in ganeti/manifest/init.pp
 
 To start with add a entry like this in your site.pp or else to your appropriate ENC
 
+Usage
+-----
+
 To setup a Master Node
-```node ganeti01 { class { 'ganeti' : host_address => $fqdn, ip_address => "196.168.1.10", pv_name => ["/dev/sdb1"], master => true } }```
+`node ganeti01 { class { 'ganeti' : host_address => $fqdn, ip_address => "196.168.1.10", pv_name => ["/dev/sdb1"], master => true } }`
 
 To setup a Secondary Node
 ```node ganeti02 { class { 'ganeti' : host_address => $fqdn, ip_address => "196.168.1.20", pv_name => ["/dev/sdb1"], master => false } }```
